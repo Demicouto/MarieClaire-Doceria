@@ -1,0 +1,279 @@
+.catalogoPage {
+  background: #ebe2d2;
+  color: #6e5226;
+}
+
+.catalogSection {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 50px 175px;
+}
+
+.catalogTitle {
+  margin: 0;
+  text-align: center;
+  font-family: "Alegreya SC", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 66.88px;
+  color: #6e5226;
+}
+
+.productViewport {
+  margin-top: 51px;
+  overflow: hidden;
+}
+
+.productTrack {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 370px;
+  gap: 30px;
+  width: max-content;
+}
+
+.productCard {
+  background: #f5f1e9;
+}
+
+.productImageWrap {
+  position: relative;
+  height: 493.33px;
+  overflow: hidden;
+}
+
+.productImageWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discountBadge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #34322e;
+  color: #ffffff;
+  padding: 3px 9px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 14.4px;
+  line-height: 18px;
+  letter-spacing: 0.0174em;
+  text-transform: uppercase;
+}
+
+.addButton {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 330px;
+  height: 48px;
+  border: 0;
+  background: #ffffff;
+  color: #000000;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.0469em;
+  text-transform: uppercase;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 19px 15px 15px;
+}
+
+.productInfo h2 {
+  margin: 0;
+  text-align: center;
+  white-space: pre-line;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 17.9px;
+  line-height: 22.22px;
+  letter-spacing: 0.014em;
+  text-transform: uppercase;
+  color: #956d44;
+}
+
+.priceWrap {
+  margin: 2px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.price {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 23.3px;
+  line-height: 34.94px;
+  color: #d63a2f;
+}
+
+.oldPrice {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 17.9px;
+  line-height: 26.52px;
+  color: #a49274;
+  text-decoration: line-through;
+}
+
+.reviewsSection {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 50px 175px;
+}
+
+.reviewsHeader h2 {
+  margin: 0;
+  text-align: center;
+  font-family: "Alegreya SC", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 43.8px;
+  line-height: 53.5px;
+  color: #6e5226;
+}
+
+.reviewsHeader p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23.68px;
+  color: #6e5226;
+}
+
+.reviewsHeader p span {
+  color: #3eb2a2;
+  font-size: 17px;
+  line-height: 1;
+}
+
+.reviewsViewport {
+  margin-top: 39.5px;
+  height: 550.88px;
+  overflow: hidden;
+}
+
+.reviewsTrack {
+  width: 1865px;
+  margin-left: -295px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.reviewCard {
+  padding: 15px 11.7969px;
+}
+
+.reviewCard > div {
+  background: #ffffff;
+  box-shadow: 0 0 12.8px rgba(0, 0, 0, 0.15);
+}
+
+.reviewImageWrap {
+  height: 250px;
+  overflow: hidden;
+}
+
+.reviewImageWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviewBody {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  padding: 32px;
+}
+
+.reviewQuote {
+  margin: 0;
+  min-height: 66px;
+  white-space: pre-line;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #6e5226;
+}
+
+.reviewMeta {
+  margin: 0;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #6e5226;
+}
+
+.reviewMeta + .reviewMeta {
+  margin-top: 4px;
+}
+
+@media (max-width: 1200px) {
+  .catalogSection,
+  .reviewsSection {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .productViewport {
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  .reviewsViewport {
+    height: auto;
+    overflow-x: auto;
+  }
+
+  .reviewsTrack {
+    margin-left: 0;
+    width: max-content;
+    gap: 24px;
+  }
+
+  .reviewCard {
+    width: 360px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalogTitle {
+    font-size: 42px;
+    line-height: 1.15;
+  }
+
+  .addButton {
+    left: 12px;
+    right: 12px;
+    width: auto;
+  }
+
+  .reviewsHeader h2 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}
