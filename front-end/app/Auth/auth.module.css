@@ -1,0 +1,248 @@
+.authPage {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f7f0e6 0%, #f2e4d6 100%);
+  padding: clamp(20px, 4vw, 48px) clamp(16px, 2.5vw, 32px) 56px;
+}
+
+.decorRight {
+  position: absolute;
+  right: -40px;
+  bottom: -30px;
+  width: 583px;
+  opacity: 0.28;
+  pointer-events: none;
+}
+
+.decorBubble {
+  position: absolute;
+  right: 72px;
+  top: 96px;
+  width: 202px;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.decorLeftBig {
+  position: absolute;
+  left: -140px;
+  bottom: -10px;
+  width: 413px;
+  opacity: 0.28;
+  pointer-events: none;
+}
+
+.decorLeftSmall {
+  position: absolute;
+  left: -114px;
+  bottom: -88px;
+  width: 231px;
+  opacity: 0.28;
+  pointer-events: none;
+}
+
+.flower {
+  position: absolute;
+  right: clamp(24px, 4.5vw, 88px);
+  top: clamp(30px, 4.5vw, 88px);
+  width: 176px;
+  pointer-events: none;
+}
+
+.logoLink {
+  display: block;
+  width: 715px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.logoLink img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  margin: 32px auto 0;
+  max-width: 1642px;
+  display: grid;
+  grid-template-columns: minmax(320px, 573px) minmax(320px, 834px);
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(20px, 2.5vw, 40px);
+}
+
+.marketing {
+  padding-left: 24px;
+  color: #2a1812;
+}
+
+.marketing h1 {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 46px;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.marketing p {
+  margin: 8px 0 0;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #7a5b4a;
+}
+
+.brownie {
+  width: 469px;
+  max-width: 100%;
+  margin-top: 56px;
+}
+
+.card {
+  width: 100%;
+  max-width: 834px;
+  min-height: clamp(430px, 52vw, 550px);
+  background: #fff;
+  border-radius: 60px;
+  box-shadow:
+    0 25px 55px rgba(0, 0, 0, 0.1),
+    0 100px 100px rgba(0, 0, 0, 0.09),
+    0 226px 135px rgba(0, 0, 0, 0.05),
+    0 401px 161px rgba(0, 0, 0, 0.01);
+  padding: clamp(28px, 5vw, 86px) clamp(18px, 5vw, 92px) clamp(28px, 3.5vw, 64px);
+}
+
+.formWrap {
+  max-width: 653px;
+}
+
+.title {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.fields {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  color: #333;
+}
+
+.field input {
+  width: 100%;
+  height: 48px;
+  border: 0.5px solid #e5e5e5;
+  border-radius: 6px;
+  background: #f2f2f2;
+  padding: 8px 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333;
+  outline: none;
+}
+
+.field input::placeholder {
+  color: #808080;
+  opacity: 1;
+}
+
+.submit {
+  margin-top: 16px;
+  width: 100%;
+  height: 52px;
+  border: 0;
+  border-radius: 6px;
+  background: #600f0c;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.switchLine {
+  margin-top: 34px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.025em;
+  color: #1a1a1a;
+}
+
+.switchLink {
+  color: #007aff;
+}
+
+.copyright {
+  margin: clamp(16px, 3vw, 30px) 0 0;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #a89487;
+}
+
+@media (max-width: 1280px) {
+  .content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .marketing {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .brownie {
+    margin: 24px auto 0;
+  }
+
+  .decorRight {
+    right: -120px;
+  }
+}
+
+@media (max-width: 900px) {
+  .authPage {
+    padding: 24px 16px 36px;
+  }
+
+  .card {
+    border-radius: 30px;
+    min-height: 0;
+    padding: 30px 18px 28px;
+  }
+
+  .decorRight,
+  .decorBubble,
+  .flower {
+    display: none;
+  }
+
+  .marketing h1 {
+    font-size: 36px;
+  }
+
+  .marketing p {
+    font-size: 18px;
+  }
+}
