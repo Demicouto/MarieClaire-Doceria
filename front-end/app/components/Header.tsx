@@ -1,9 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const navItems = ["Produtos", "Catálogo", "Encomendas", "Nossa História"];
+const navItems = [
+  { label: "Produtos", href: "#" },
+  { label: "Catálogo", href: "/catalogo" },
+  { label: "Encomendas", href: "#" },
+  { label: "Nossa História", href: "/nossahistoria" },
+];
 
-export default function SiteHeader() {
+export default function Header() {
   return (
     <>
       <section className="announcement">
@@ -38,11 +43,17 @@ export default function SiteHeader() {
         </div>
 
         <nav className="primaryNav" aria-label="Principal">
-          {navItems.map((item) => (
-            <a key={item} href={item === "Catálogo" ? "/catalogo" : "#"}>
-              {item}
-            </a>
-          ))}
+          {navItems.map((item) =>
+            item.href === "#" ? (
+              <a key={item.label} href={item.href}>
+                {item.label}
+              </a>
+            ) : (
+              <Link key={item.label} href={item.href}>
+                {item.label}
+              </Link>
+            )
+          )}
         </nav>
       </header>
     </>

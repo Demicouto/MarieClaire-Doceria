@@ -166,7 +166,7 @@ export default function Home() {
               Marie Claire e sinonimo de qualidade e sofisticacao. Descubra mais
               sobre nossa historia e o que nos inspira a criar delicias incomparaveis.
             </p>
-            <a href="#">Saiba mais</a>
+            <Link href="/nossahistoria">Saiba mais</Link>
           </div>
 
           <div className={styles.aboutImageWrap}>

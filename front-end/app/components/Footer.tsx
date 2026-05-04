@@ -1,15 +1,20 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const institutionalLinks = [
-  "Quem Somos",
-  "Contato",
-  "Politica de Entrega",
-  "Troca e Devolucoes",
+  { label: "Quem Somos", href: "/nossahistoria" },
+  { label: "Contato", href: "#" },
+  { label: "Politica de Entrega", href: "#" },
+  { label: "Troca e Devolucoes", href: "#" },
 ];
 
-const productLinks = ["Catálogo", "Cookies", "Brownies"];
+const productLinks = [
+  { label: "Catálogo", href: "/catalogo" },
+  { label: "Cookies", href: "#" },
+  { label: "Brownies", href: "#" },
+];
 
-export default function SiteFooter() {
+export default function Footer() {
   return (
     <>
       <footer className="footer">
@@ -60,8 +65,12 @@ export default function SiteFooter() {
             <h3>institucional</h3>
             <ul>
               {institutionalLinks.map((item) => (
-                <li key={item}>
-                  <a href="#">{item}</a>
+                <li key={item.label}>
+                  {item.href === "#" ? (
+                    <a href={item.href}>{item.label}</a>
+                  ) : (
+                    <Link href={item.href}>{item.label}</Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -71,8 +80,12 @@ export default function SiteFooter() {
             <h3>produtos</h3>
             <ul>
               {productLinks.map((item) => (
-                <li key={item}>
-                  <a href={item === "Catálogo" ? "/catalogo" : "#"}>{item}</a>
+                <li key={item.label}>
+                  {item.href === "#" ? (
+                    <a href={item.href}>{item.label}</a>
+                  ) : (
+                    <Link href={item.href}>{item.label}</Link>
+                  )}
                 </li>
               ))}
             </ul>
