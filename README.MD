@@ -106,6 +106,20 @@
 │  └─ Dados Relacionais                   │
 └─────────────────────────────────────────┘
 ```
+---
+
+## 🎨 Design (Figma)
+
+O layout e a identidade visual do projeto foram planejados no Figma.
+
+🔗 Acesse o protótipo:
+https://www.figma.com/design/8mbmB61vOrwR9KyMuCc4za/Marie-Claire-%E2%80%94-UI-Design-System-e-Telas?node-id=44-2&t=dtbVRQc1RuCk8gSE-1
+
+- Telas do catálogo e contato
+- Componentes reutilizáveis (Header, Footer, Cards)
+- Sistema de cores e tipografia
+- Estrutura das páginas públicas e administrativas
+
 ## 🛠️ Tecnologias
 
 ### Frontend
