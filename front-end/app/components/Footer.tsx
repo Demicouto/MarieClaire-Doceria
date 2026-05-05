@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const institutionalLinks = [
   { label: "Quem Somos", href: "/nossahistoria" },
-  { label: "Contato", href: "#" },
+  { label: "Contato", href: "/contato" },
   { label: "Politica de Entrega", href: "#" },
   { label: "Troca e Devolucoes", href: "#" },
 ];
