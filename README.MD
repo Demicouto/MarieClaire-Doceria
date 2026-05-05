@@ -113,7 +113,7 @@
 O layout e a identidade visual do projeto foram planejados no Figma.
 
 🔗 Acesse o protótipo:
-https://www.figma.com/design/8mbmB61vOrwR9KyMuCc4za/Marie-Claire-%E2%80%94-UI-Design-System-e-Telas?node-id=44-2&t=dtbVRQc1RuCk8gSE-1
+https://www.figma.com/design/0tXtxwWath1zM6sR7BZ160/Marie-Claire---Doceria---Design?node-id=0-1&t=Qq8fRH3FlZGYRYQw-1
 
 - Telas do catálogo e contato
 - Componentes reutilizáveis (Header, Footer, Cards)
