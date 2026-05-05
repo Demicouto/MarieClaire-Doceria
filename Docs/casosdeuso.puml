@@ -1,0 +1,38 @@
+@startuml
+left to right direction
+actor Usuario
+actor Administrador
+rectangle Sistema {
+Usuario --> (Acessar Home)
+Usuario --> (Ver Catálogo)
+Usuario --> (Visualizar Produtos)
+Usuario --> (Login)
+Usuario --> (Cadastro)
+Usuario --> (Ver Quem Somos)
+Usuario --> (Ver Política de Privacidade)
+Usuario --> (Contato com Administrador)
+(Ver Catálogo) --> (Visualizar Produtos)
+(Visualizar Produtos)
+
+Administrador --> (Acessar Home)
+Administrador --> (Ver Catálogo)
+Administrador --> (Visualizar Produtos)
+Administrador --> (Login)
+Administrador --> (Cadastro)
+Administrador --> (Ver Quem Somos)
+Administrador --> (Ver Política de Privacidade)
+Administrador --> (Contato com Administrador)
+Administrador --> (Acessar Dashboard Admin)
+Administrador --> (Atualizar Catálogo)
+
+Administrador --> (Gerenciar Ingredientes)
+Administrador --> (Registrar Venda)
+Administrador --> (Visualizar Dashboard)
+Administrador --> (Consultar Histórico de Vendas)
+
+(Gerenciar Ingredientes) --> (Criar Ingrediente)
+(Gerenciar Ingredientes) --> (Editar Ingrediente)
+(Gerenciar Ingredientes) --> (Deletar Ingrediente)
+(Visualizar Dashboard) --> (Ver Gráficos)
+}
+@enduml
